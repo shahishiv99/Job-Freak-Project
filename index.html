@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Freak</title>
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/6bd3deae16.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="#" onclick="showComponent('home')">Home</a>
+      <a href="#" onclick="showComponent('information')">Information</a>
+      <a href="#" onclick="showComponent('guide')">guide</a>
+      <a href="#" onclick="showComponent('contact')">Contact</a>
+    </div>
+    <!-- Welcome Section -->
+    <section id="welcome" onclick="showComponent('welcome')">
+      <span>
+        <h1>Welcome</h1>
+        <h6>Hello !!</h6>
+      </span>
+    </section>
+    <!-- Home Section -->
+    <section id="home" class="hide">
+      <span>
+        <h1>Home Page</h1>
+        <h6>Welcome to the Website!</h6>
+      </span>
+    </section>
+    <!-- Information Section -->
+    <section id="information" class="hide">
+      <span>
+        <h1>Information Page</h1>
+        <div class="content">
+          <div class="imageContainer">
+            <h2>Shopping</h2>
+            <img id="imgShopping" src="Light-undraw_shopping_bags_nbp4.svg" alt="Shopping" class="img">
+          </div>
+          <div class="imageContainer">
+            <h2>Traveling</h2>
+            <img id="imgTraveling" src="Light-undraw_traveling_yhxq.svg" alt="Traveling" class="img">
+          </div>
+          <div class="imageContainer">
+            <h2>Education</h2>
+            <img id="imgEducation" src="Light-undraw_educator_re_ju47.svg" alt="Education" class="img">
+          </div>
+        </div>
+      </span>
+    </section>
+    <!-- Guide Section -->
+    <section id="guide" class="hide">
+      <div class="guide">
+        <h1>Guide</h1>
+        <div class="buttons">
+          <button class="primary">Primary</button>
+          <button class="secondary">Secondary</button>
+          <button class="outline">Outline</button>
+          <button class="secondaryOutline">Alt Outline</button>
+        </div>
+        <div class="per">
+          <div class="textBox">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="hide">
+      <div class="socialIcon">
+        <i class="fab fa-github" aria-hidden="true"></i>
+        <i class="fab fa-codepen" aria-hidden="true"></i>
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+        <i class="fab fa-youtube" aria-hidden="true"></i>
+      </div>
+    </section>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
